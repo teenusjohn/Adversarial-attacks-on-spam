@@ -7,7 +7,7 @@ Created on Tue Jan 29 12:36:10 2019
 from Adversary import Adversary
 import pandas as pd
 import numpy as np
-data=pd.read_csv("C:/Users/Teenu/Documents/code/spam.csv")
+data=pd.read_csv("C:/Users/marco/christ/code/spam.csv")
 gen=Adversary()
 for i, item in enumerate(data['Category']):
     texts.append(data['Message'][i])
@@ -30,4 +30,4 @@ texts_gen = gen.generate(spam_messages, text_sample_rate=5.0, word_sample_rate=0
 
 #print(texts_gen)
 #text_gen.to_csv('hello.csv')
-numpy.savetxt("C:/Users/Teenu/Documents/code/foo.csv", texts_gen, delimiter=",")
+numpy.savetxt("C:/Users/marco/christ/code/foo.csv", texts_gen, delimiter=",")
